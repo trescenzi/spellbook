@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+  font-family: "Roboto", "Sans Serif";
+  color: #485862;
+  background: #ffffff;
+  text-indent: 10px;
+}
+
+summary {
+  list-style: none;
+  user-select: none;
+  display:block;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-bottom: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  outline: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+summary:hover {
+  background: #e8f2f9;
+}
+
+
+.wrapper{
+  margin: 10% auto;
+  width: 90%;
+  background-color: #fff;
+}
+
+details {
+  margin: 0;
+  padding: 0;
+}
+
+td { 
+  width: 10%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+x-spell {
+  display: block;
+}
+
+x-spell table,
+x-spell .description,
+x-spell .description div {
+  padding-left: 10px;
+}
+
+x-spell-level x-spell {
+  padding: 10px;
+}

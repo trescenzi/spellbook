@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	
+<link rel="stylesheet" href="test.css">
+	
+<meta charset="utf-8">
+<title>Winwick's Spellbook</title>
+<script src="./index.js"></script>
+</head>
+
+<body>
+    
+<p style="text-align: center">WINWICK'S SPELLBOOK</p>
+	<div class="wrapper">
+    <x-spell-list></x-spell-list>
+  </div>
+  <script type="text/javascript">
+    const spellList = document.querySelector('x-spell-list');
+    fetch('/spells.json')
+      .then((res) => res.json())
+      .then(spells => spellList.spells = spells)
+      .catch(e => console.log(e));
+  </script>
+</body>
+</html>
